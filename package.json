@@ -1,0 +1,24 @@
+{
+  "name": "2048-js",
+  "version": "1.0.0",
+  "description": "2048 Game to play in the Terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j97zhu/2048-js.git"
+  },
+  "keywords": [
+    "2048",
+    "javascript",
+    "canvas"
+  ],
+  "author": "finale1891",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j97zhu/2048-js/issues"
+  },
+  "homepage": "https://github.com/j97zhu/2048-js#readme"
+}
