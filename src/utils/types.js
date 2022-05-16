@@ -46,7 +46,8 @@ const Direction = Object.freeze({
 const GameStatus = Object.freeze({
   PREPARE: 0,
   PLAY: 1,
-  END: 2
+  WON: 2,
+  LOST: 3
 })
 
 

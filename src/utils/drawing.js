@@ -1,5 +1,3 @@
-const { BlockColor, BoardNumber } = require("../utils/types");
-
 const Digits = [
     [
       'xxx',
@@ -65,17 +63,7 @@ const Digits = [
 ]
 
 const getDigitsDrawing = (number) => {
-  // let color;
   const color = (Math.log2(number) % 7 )| 0;
-  // for (const [key, val] of Object.entries(BoardNumber)) {
-  //     if (val === number) {
-  //       color = parseInt(key); 
-  //     }
-  // }
-
-  // const color = 1 + (((number / 2) | 0 ) % 8);
-  // color = key.toString();
-  // const color = BlockColor[number];
   return (number.toString()).split('').map(function(d) {
     var num = Digits[d];
     return num;

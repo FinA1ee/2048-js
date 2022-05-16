@@ -9,10 +9,6 @@ class Block {
     this.value = value;
   }
 
-  hasWon() {
-    return this.value = BoardNumber['11'];
-  }
-
   clear() {
     this.value = BoardNumber['0'];
   }
@@ -32,14 +28,6 @@ class Block {
     this.value += block.getValue();
   }
 
-  // /** 合并两个块 */
-  // getAbsorbed(block) {
-  //   if (this.value !== BoardNumber['0'] && block.BoardNumber === this.value) {
-  //     block.updateValue(this.value);
-  //     this.updateValue(BoardNumber['0']);
-  //   }
-  // }
-
   slide(direction, distance) {
     switch(direction) {
       case Direction.UP:
@@ -47,16 +35,6 @@ class Block {
         break;
     }
   }
-
-  printBlock() {
-    // console.log(this.value);
-  }
-
-  draw() {
-
-  }
-
-
 }
 
 module.exports = Block;
