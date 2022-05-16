@@ -23,14 +23,14 @@ const startGame = (level) => {
   const draw = () => {
     clivas.alias('box-color', 'inverse+cyan');
     clivas.alias('full-width', 4 * WIDTH + 15);
-    clivas.flush(false);
+    // clivas.flush(false);
     clivas.cursor(false);
-    'black white blue yellow green magenta'.split(' ').forEach(function(color, i) {
+    'white blue yellow green magenta red cyan'.split(' ').forEach(function(color, i) {
       clivas.alias('color-'+i, '2+inverse+'+color);
     });
   
-    clivas.line('');
-    clivas.line('{full-width + box-color}');
+    // clivas.line('');
+    // clivas.line('{full-width + box-color}');
     
     // const getDigitDrawing = (number) => {
     //   const color = 1+(((number / 1000)|0)%5);
