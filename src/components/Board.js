@@ -159,7 +159,6 @@ class Board {
     for (let z = 0; z < 5; z++) {
       let padding = "                            ";
       for (let x = 0; x < str.length; x++) {
-        // let padding = "                            ";
         const lineDrawing = getDigitsDrawing(new Number(str[x]));
         if (lineDrawing[z]) padding += lineDrawing[z];
         
@@ -235,9 +234,12 @@ class Board {
     }
 
     this.checkGameStatus();
-    if (this.gameStatus !== GameStatus.PLAY) return;
-    if (validMove) this._dropNumber(1);
-    this.draw();
+    if (this.gameStatus === GameStatus.PLAY) {
+      if (validMove) this._dropNumber(1);
+      this.draw();
+    } else {
+      this.draw();
+    }
   }
 
   log(str) {
