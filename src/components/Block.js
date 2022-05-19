@@ -18,9 +18,7 @@ class Block {
   }
 
   updateValue(value) {
-    if (value === this.value) return false;
     this.value = value;
-    return true;
   }
 
   merge(block) {
