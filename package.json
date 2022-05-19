@@ -1,6 +1,6 @@
 {
-  "name": "@finale1891/2048-js",
-  "version": "1.0.2",
+  "name": "2048-terminal",
+  "version": "1.0.4",
   "description": "2048 Game to play in the Terminal",
   "main": "src/index.js",
   "scripts": {
